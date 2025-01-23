@@ -1,0 +1,30 @@
+# Dataset configuration file for YOLO model
+
+# Path to the dataset
+path: /Users/wehappyfew/Documents/cloudform_projects/cv-synthetic-data/assets/synthetic_data  # The root path where the images and labels are stored
+
+# Training data path (relative to `path`)
+train: images/train  # Path to the training images (subdirectory under the root path)
+
+# Validation data path (relative to `path`)
+val: images/val  # Path to the validation images (subdirectory under the root path)
+
+# Number of classes
+nc: 2  # Number of classes in your dataset
+
+# Names of the classes
+names: [
+  'lancet',
+  'shahed136'
+]  # List of class names (must match label files)
+
+# Optional: if using data augmentation during training
+augmentation:
+  - flip: 0.5  # Horizontal flip with 50% probability
+  - scale: [0.8, 1.2]  # Random scaling between 80% and 120% of original size
+  - translate: [0.1, 0.1]  # Random translation in both x and y directions by 10%
+  - rotate: [-10, 10]  # Random rotation within the specified range
+
+# Optional: other settings (if needed)
+# For example, specific image size settings
+img_size: 640  # Resize images to 640x640 for training
