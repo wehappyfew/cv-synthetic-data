@@ -177,16 +177,16 @@ cython_debug/
 /yolo_models/*.pt
 
 # Ignore all files inside rendered_2d_images and its subdirectories
-/assets/rendered_2d_images/*/
+#/assets/rendered_2d_images/*/
 
-/assets/synthetic_data/images/train/*
-/assets/synthetic_data/images/val/*
-/assets/synthetic_data/images/test/*
-
-/assets/synthetic_data/labels/train/*
-/assets/synthetic_data/labels/val/*
-/assets/synthetic_data/labels/train.cache
-/assets/synthetic_data/labels/val.cache
+#/assets/synthetic_data/images/train/*
+#/assets/synthetic_data/images/val/*
+#/assets/synthetic_data/images/test/*
+#
+#/assets/synthetic_data/labels/train/*
+#/assets/synthetic_data/labels/val/*
+#/assets/synthetic_data/labels/train.cache
+#/assets/synthetic_data/labels/val.cache
 
 /pyvenv.cfg
 
